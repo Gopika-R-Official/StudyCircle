@@ -48,8 +48,4 @@ It allows students to join public groups, chat in real-time, share visual notes,
    npx expo start -c
    ```
 
-## 📸 Screenshots
-*(Coming soon)*
 
----
-Built with ❤️ using Expo & Firebase.
