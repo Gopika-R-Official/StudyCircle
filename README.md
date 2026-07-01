@@ -1,56 +1,55 @@
-# Welcome to your Expo app 👋
+# StudyCircle 📚
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+StudyCircle is a modern, real-time study group application built with **React Native (Expo SDK 57)** and powered by **Firebase** and **Google Gemini AI**. 
 
-## Get started
+It allows students to join public groups, chat in real-time, share visual notes, track their daily study streaks, and participate in AI-generated multiple-choice quizzes to earn leaderboard points!
 
-1. Install dependencies
+## ✨ Key Features
 
+- **Real-time Chat**: Powered by Firebase Realtime Database for instantaneous messaging.
+- **AI Quizzes**: Admins can generate custom MCQ quizzes instantly by providing a topic to Google's Gemini 1.5 Flash AI.
+- **Smart Note Attachments**: Share photos directly in your study groups using our Base64 image compression workaround (saving storage costs).
+- **Streak & Habit Tracking**: Check-in daily to build your streak and climb the global leaderboard.
+- **Member Management**: Admins can instantly invite members by entering their `@gmail.com` address.
+- **Full Safe Area Support**: Built meticulously with React Navigation's native Safe Area context to seamlessly adapt to notches, dynamic islands, and Android navigation bars.
+
+## 🛠 Tech Stack
+
+- **Frontend**: React Native, Expo (SDK 57)
+- **Navigation**: React Navigation (Native Stack, Bottom Tabs, Material Top Tabs)
+- **Backend / DB**: Firebase (Authentication, Firestore, Realtime Database)
+- **AI**: Google Generative AI (`@google/generative-ai`)
+- **Storage**: AsyncStorage (for local device state)
+
+## 🚀 Setup Instructions
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Gopika-R-Official/StudyCircle.git
+   cd StudyCircle
+   ```
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Configure Firebase:**
+   - Create a Firebase project.
+   - Enable Authentication (Email/Password), Firestore, and Realtime Database.
+   - Replace the config block in `src/config/firebase.js` with your own Firebase keys.
 
+4. **Configure Gemini AI:**
+   - Go to Google AI Studio and generate an API key.
+   - Paste your `AIzaSy...` key into `src/config/gemini.js`.
+
+5. **Start the app:**
    ```bash
-   npx expo start
+   npx expo start -c
    ```
 
-In the output, you'll find options to open the app in a
+## 📸 Screenshots
+*(Coming soon)*
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Built with ❤️ using Expo & Firebase.
